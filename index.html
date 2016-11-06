@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- HEADER -->
+
+<head>
+	<title>Arnett's Animes</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon//apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon//apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon//apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon//apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon//apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon//apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon//apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon//apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon//apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon//android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon//favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+	<link rel="manifest" href="images/favicon//manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="application/x-javascript">
+	addEventListener("load", function() {
+		setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ 
+			window.scrollTo(0,1);
+		}
+	</script>
+
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+	        	var w = $(window).width();
+	        	if(w > 320 && menu.is(':hidden')) {
+	        		menu.removeAttr('style');
+	        	}
+	    	});
+		});
+	</script>
+</head>
+
+<body>
+
+	<!-- NAVBAR -->
+	
+	<div class="header_bg" id="home">
+		<div class="container">
+			<div class="row header text-center ">
+				<nav class="top-nav">
+					<ul class="top-nav nav_list">
+						<li><a href="action.html">Action</a></li>
+						<li><a href="amour.html">Amour & Amiti&eacute;</a></li>
+						<li><a href="aventure.html">Aventure</a></li>
+						<li><a href="comedie.html">Com&eacute;die</a></li>
+						<li class="logo page-scroll"><a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a></li>
+						<li><a href="drame.html">Drame</a></li>
+					    <li><a href="fantastique.html">Fantastique</a></li>
+						<li><a href="autres.html">Autres</a></li>
+						<li><a href="top.html">BONUS</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="slider_bg">
+		<div class="container">
+			<div class="row slider">
+				<div class="wmuSlider example1">
+					    <div class="wmuSliderWrapper">
+						    <article style="position: absolute; width: 100%; opacity: 0;"> 
+						  	  	<div class="slider_img text-center">
+						   			<ul class="list-unstyled list_imgs">
+						   				<li><img src="images/slider_index_4.jpg" alt="" class="responsive test"/></li>
+						   			</ul>
+					           	</div>
+						   </article>
+						   <article style="position: relative; width: 100%; opacity: 1;"> 
+						  	 	<div class="slider_img text-center">
+						   			<ul class="list-unstyled list_imgs">
+						   				<li><img src="images/slider_index_2.jpg" alt="" class="responsive test"/></li>
+						   			</ul>
+					           	</div>
+						   </article>
+						   <article style="position: relative; width: 100%; opacity: 1;"> 
+						  	 	<div class="slider_img text-center">
+						   			<ul class="list-unstyled list_imgs">
+						   				<li><img src="images/slider_index_3.jpg" alt="" class="responsive test"/></li>
+						   			</ul>
+					           	</div>
+						   </article>
+						   <article style="position: relative; width: 100%; opacity: 1;"> 
+						  	 	<div class="slider_img text-center">
+						   			<ul class="list-unstyled list_imgs">
+						   				<li><img src="images/slider_index_1.jpg" alt="" class="responsive test"/></li>
+						   			</ul>
+					           	</div>
+						   </article>
+						   <article style="position: relative; width: 100%; opacity: 1;"> 
+						  	 	<div class="slider_img text-center">
+						   			<ul class="list-unstyled list_imgs">
+						   				<li><img src="images/slider_index_5.jpg" alt="" class="responsive test"/></li>
+						   			</ul>
+					           	</div>
+						   </article>
+						   <article style="position: relative; width: 100%; opacity: 1;"> 
+						  	 	<div class="slider_img text-center">
+						   			<ul class="list-unstyled list_imgs">
+						   				<li><img src="images/slider_index_6.jpg" alt="" class="responsive test"/></li>
+						   			</ul>
+					           	</div>
+						   </article>
+						</div>
+
+		                <ul class="wmuSliderPagination">
+		                	<li><a href="#" class="">0</a></li>
+		                	<li><a href="#" class="">1</a></li>
+		                	<li><a href="#" class="">2</a></li>
+		                	<li><a href="#" class="">3</a></li>
+		                	<li><a href="#" class="">4</a></li>
+		                	<li><a href="#" class="">5</a></li>
+		                </ul>
+
+					<script src="js/jquery.wmuSlider.js"></script> 
+				    <script>
+						$('.example1').wmuSlider();         	
+					</script>
+		        	</div>
+		        	<div class="clearfix"></div>
+		        </div>
+		    </div>
+	    </div>
+
+	<div class="blog">
+		<div class="container">
+			<div class="main row">
+				<div class="col-md-8 blog_left">
+					<h2 class="style">IMPORTANT</h2>
+					<div class="blog_main">
+						<div class="clearfix"></div>
+						<p class="para">Bonjour à tous et à toutes, <br>
+						Tout d'abord, merci de venir visiter mon site. Je suis actuellement étudiant en informatique et amoureux du monde de la japanimation, j'ai réuni ces deux passions avec ce projet. <br><br>
+						<b>Quel est le but de ce site?</b><br>
+						Ce site sert de bibliothèque numérique ou plutôt de registre à animés. Je recense tous les animés que j'ai apprécié et que je souhaite faire partager. <br><br>
+						<b>Comment fonctionne t-il?</b><br>
+						Vous trouverez sur votre droite les derniers animés que j'ai traité ( et bien souvent les derniers sortis ). <br>
+						Les animés sont "triés" par genre dominant ; dans la grande majorité des cas un animés n'aura pas qu'un unique genre, j'ai donc décidé de créer des grandes catégories associées aux prédominants.<br>
+						Il est donc possible de retrouver le même animé dans plusieurs catégories quand le choix était trop compliqué. <br><br>
+						<b>Où sont les catégories Mecha, Harem, Ecchi etc ?</b><br>
+						Comme je répertorie les animés que j'ai apprécié et que je n'aime pas particulièrement ces genres, ces catégories n'existent pas.<br>
+						En revanche, si toutefois certains animés sont en "dehors" des catégories listées, ils seront alors dans "Autres". <br>
+						De plus, si un animé présente un côté fan-service, ecchi, harem, mecha etc trop important, il sera également dans "Autres".<br><br>
+						<b>Qu'est ce que ce site nous offre?</b><br>
+						Il vous apporte dans un premier temps une liste d'animés pour presque tous les genres. <br>
+						Pour chaque page d'animé, il y aura une bande annonce ( trailer ou AMV ) et des informations comme l'année de sortie, la durée et si/où est-il licencié ainsi qu'un synopsis.<br>
+						De plus dans la majorité des cas il y aura un slider avec plusieurs images cliquables ( wallpapers ) ainsi que mon ressenti PERSONNEL sur l'oeuvre.<br>
+						Pour finir une liste des "Tags" ou les "sous-catégories" accompagnée de notes. <br><br>
+						<b>Autres informations</b><br>
+						La site est amené à évoluer, par exemple, la création d'une playlist avec les meilleurs musiques, un système de compte, de "watch-list", de notes des spectateurs etc.<br>
+						Le site continuera à être alimenté avec les animés qui sortiront et que je regarderai, cependant je reste étudiant et ce projet personnel.<br>
+						Si vous désirez plus d'informations à mon sujet, vous pouvez cliquer sur le bouton ci-dessous.<br><br>
+
+
+						</p>
+						<div class="read_more btm">
+							<a href="http://scarletarnett.github.io/">Plus sur moi</a>
+						</div>
+					</div>
+				
+				</div>
+				<div class="col-md-4 blog_right">
+					<ul class="ads_nav list-unstyled">
+						<h4>Derniers animes</h4>
+							<li><a href="aventure/zetsuen_no_tempest.html"><img src="images/tempest_mini.jpg" alt=""> </a></li>
+							<li><a href="comedie/yamada_7_majo.html"><img src="images/yamada_mini.jpg" alt=""> </a></li>
+							<li><a href="amour/glasslip.html"><img src="images/glasslip_mini.jpg" alt=""> </a></li>
+							<li><a href="action/akuma_no_riddle.html"><img src="images/akuma_mini.jpg" alt=""> </a></li>
+						<div class="clearfix"></div>
+					</ul>
+
+					<hr>
+				
+					<div class="soc_icons">
+						<ul class="list-unstyled text-center">
+							<li><a href="https://www.facebook.com/arnettanimes?fref=ts"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://twitter.com/FrenchMaidHawk"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="https://fr.linkedin.com/pub/alexandre-baptiste/a6/173/5"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://github.com/ScarletArnett"><i class="fa fa-github"></i></a></li>
+						</ul>	
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FOOTER -->
+
+
+	<div class="footer1_bg">
+
+		<div class="container">
+			<div class="row  footer">
+				<div class="copy text-center">
+					<p class="link"><span>&#169; Arnett's Animes | All rights reserved </span></p>
+					<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+		</div>
+
+			<script type="text/javascript">
+					$(function() {
+					  $('a[href*=#]:not([href=#])').click(function() {
+					    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				
+					      var target = $(this.hash);
+					      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					      if (target.length) {
+					        $('html,body').animate({
+					          scrollTop: target.offset().top
+					        }, 1000);
+					        return false;
+					      }
+					    }
+					  });
+					});
+			</script>
+	</div>
+</body>
+</html>

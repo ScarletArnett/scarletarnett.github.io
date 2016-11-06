@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Arnett's Animes</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon//apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon//apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon//apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon//apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon//apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon//apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon//apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon//apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon//apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon//android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon//favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+	<link rel="manifest" href="images/favicon//manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.2.1.js"></script>
+
+	<script type="application/x-javascript">
+	addEventListener("load", function() {
+		setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ 
+			window.scrollTo(0,1);
+		}
+	</script>
+
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+	        	var w = $(window).width();
+	        	if(w > 320 && menu.is(':hidden')) {
+	        		menu.removeAttr('style');
+	        	}
+	    	});
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("div.fancyDemo a").fancybox();
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<!-- NAVBAR -->
+	
+	<div class="header_bg" id="home">
+		<div class="container">
+			<div class="row header text-center ">
+				<nav class="top-nav">
+					<ul class="top-nav nav_list">
+						<li><a href="action.html">Action</a></li>
+						<li><a href="amour.html">Amour & Amiti&eacute;</a></li>
+						<li><a href="aventure.html">Aventure</a></li>
+						<li><a href="comedie.html">Com&eacute;die</a></li>
+						<li class="logo page-scroll"><a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a></li>
+						<li><a href="drame.html">Drame</a></li>
+					    <li><a href="fantastique.html">Fantastique</a></li>
+						<li><a href="autres.html">Autres</a></li>
+						<li><a href="top.html">BONUS</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="main row">
+	 	 	<h2 class="style">Action</h2>
+		 	 <div class="grids_of_4 row">
+		 	 		<div class="col-md-3 images_1_of_4">
+						<a href="drame/akame_ga_kill.html"><img src="images/akame2.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="drame/akame_ga_kill.html">Akame Ga KILL!</a></h3>
+						<br><br>
+					<br><br>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/akuma_no_riddle.html"><img src="images/akuma.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/akuma_no_riddle.html">Akuma No Riddle</a></h3>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/blue_exorcist.html"><img src="images/exorcist.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/blue_exorcist.html">Ao No Exorcist</a></h3>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/arslan.html"><img src="images/arslan2.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/arslan.html">Arskan Senki</a></h3>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="grids_of_4 row">
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/black_bullet.html"><img src="images/bullet.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/black_bullet.html">Black Bullet</a></h3>
+						<br><br>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/btooom.html"><img src="images/btooom.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/btooom.html">Btooom!</a></h3>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/c_control.html"><img src="images/money.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/c_control.html">C – Control : The Money and Soul of Possibility</a></h3>
+					</div>		
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/fate_stay_night.html"><img src="images/fate_stay_night.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/fate_stay_night.html">Fate/stay night : Unlimited Blade Works</a></h3>
+					</div>				
+					<div class="clear"></div>
+				</div>
+				<div class="grids_of_4 row">
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/fate_zero.html"><img src="images/fate_zero.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/fate_zero.html">Fate/Zero</a></h3>
+						<br><br>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/gangsta.html"><img src="images/gangsta2.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/gangsta.html">Gangsta</a></h3>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/hamatora.html"><img src="images/hamatora.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/hamatora.html">Hamatora</a></h3>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="autres/psycho_pass.html"><img src="images/psycho.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="autres/psycho_pass.html">Psycho-Pass</a></h3>
+					</div>							
+					<div class="clear"></div>
+				</div>
+				<div class="grids_of_4 row">
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/shingeki_no_bahamut.html"><img src="images/bahamut.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/shingeki_no_bahamut.html">Shingeki No Bahamut: Genesis</a></h3>
+						<br><br>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="autres/strike_the_blood.html"><img src="images/blood.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="autres/strike_the_blood.html">Strike The Blood</a></h3>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/tokyo_ghoul	.html"><img src="images/tokyo_ghoul.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/tokyo_ghoul	.html">Tokyo Ghoul</a></h3>
+					</div>
+					<div class="col-md-3 images_1_of_4">
+						<a href="action/wizard_barristers.html"><img src="images/barristers.jpg" alt=""class="img-responsive2"/></a>
+						<h3><a href="action/wizard_barristers.html">Wizard Barristers : Benmashi Cecil</a></h3>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+		</div>
+	</div>
+
+
+
+<!-- FOOTER -->
+
+
+	<div class="footer1_bg">
+
+		<div class="container">
+			<div class="row  footer">
+				<div class="copy text-center">
+					<p class="link"><span>&#169; Arnett's Animes | All rights reserved </span></p>
+					<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+		</div>
+
+			<script type="text/javascript">
+					$(function() {
+					  $('a[href*=#]:not([href=#])').click(function() {
+					    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				
+					      var target = $(this.hash);
+					      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					      if (target.length) {
+					        $('html,body').animate({
+					          scrollTop: target.offset().top
+					        }, 1000);
+					        return false;
+					      }
+					    }
+					  });
+					});
+			</script>
+	</div>
+</body>
+</html>

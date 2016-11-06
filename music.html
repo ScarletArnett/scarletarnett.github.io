@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- HEADER -->
+
+<head>
+	<title>Arnett's Animes</title>
+
+	<link rel="stylesheet" href="css/player.css">
+	<script src="js/index.js"></script>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon//apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon//apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon//apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon//apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon//apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon//apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon//apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon//apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon//apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon//android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon//favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+	<link rel="manifest" href="images/favicon//manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="application/x-javascript">
+	addEventListener("load", function() {
+		setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ 
+			window.scrollTo(0,1);
+		}
+	</script>
+
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+			$(window).resize(function(){
+	        	var w = $(window).width();
+	        	if(w > 320 && menu.is(':hidden')) {
+	        		menu.removeAttr('style');
+	        	}
+	    	});
+		});
+	</script>
+</head>
+
+<body>
+
+	<!-- NAVBAR -->
+	
+	<div class="header_bg" id="home">
+		<div class="container">
+			<div class="row header text-center ">
+				<nav class="top-nav">
+					<ul class="top-nav nav_list">
+						<li><a href="action.html">Action</a></li>
+						<li><a href="amour.html">Amour & Amiti&eacute;</a></li>
+						<li><a href="aventure.html">Aventure</a></li>
+						<li><a href="comedie.html">Com&eacute;die</a></li>
+						<li class="logo page-scroll"><a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a></li>
+						<li><a href="drame.html">Drame</a></li>
+					    <li><a href="fantastique.html">Fantastique</a></li>
+						<li><a href="autres.html">Autres</a></li>
+						<li><a href="top.html">BONUS</a></li>
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+				</nav>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="blog">
+		<div class="container">
+			<div class="main row">
+					<h2 class="style">Playlist</h2>	
+
+					<img src="images/anime_girl.png" class="padbol">
+
+
+					<div class="player">
+						<span id="arm"></span>
+						<ul>
+							<li class="artwork">
+							</li>
+							<li class="info">
+							<br>
+								<h1 class="first_" id="artist">loading</h1>
+								<h4 class="second_" id="album">loading</h4>
+								<h2 class="third_" id="song">loading</h2>
+								<div class="button-items">
+									<audio id="music" preload="auto">
+									</audio>
+									<div id="slider">
+										<div id="elapsed"></div>
+										<div id="buffered"></div>
+									</div>
+									<br>
+									<p id="timer">0:00</p>
+									<div class="controls">
+										<span class="expend">
+											<svg id="previous" class="step-backward" viewBox="0 0 25 25" xml:space="preserve">
+												<g>
+													<polygon points="4.9,4.3 9,4.3 9,11.6 21.4,4.3 21.4,20.7 9,13.4 9,20.7 4.9,20.7"/>
+												</g>
+											</svg>
+										</span>
+										<svg id="play" viewBox="0 0 25 25" xml:space="preserve">
+											<defs>
+												<rect x="-49.5" y="-132.9" width="446.4" height="366.4"/>
+											</defs>
+											<g>
+												<circle fill="none" cx="12.5" cy="12.5" r="10.8"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M8.7,6.9V18c0,0,0.2,1.4,1.8,0l8.1-4.8c0,0,1.2-1.1-1-2L9.8,6.5 C9.8,6.5,9.1,6,8.7,6.9z"/>
+											</g>
+										</svg>
+										<svg id="pause" viewBox="0 0 25 25" xml:space="preserve">
+											<g>
+												<rect x="6" y="4.6" width="3.8" height="15.7"/>
+												<rect x="14" y="4.6" width="3.9" height="15.7"/>
+											</g>
+										</svg>
+										<span class="expend">
+											<svg id="next" class="step-foreward" viewBox="0 0 25 25" xml:space="preserve">
+												<g>
+													<polygon points="20.7,4.3 16.6,4.3 16.6,11.6 4.3,4.3 4.3,20.7 16.7,13.4 16.6,20.7 20.7,20.7"/>
+												</g>
+											</svg>
+										</span>
+										<div class="slider">
+											<div class="volume"></div>
+											<input style="margin-top: 10px;"type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+										</div>
+										<br><br>
+										<p class="pop_p" >Ou la version <a href="popout.html"
+									    onclick="return !window.open(this.href, 'Player', 'width=500,height=500')"
+									    target="_blank">POPOUT</a>.</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<script src="js/index.js"></script>
+				</div>
+				<div class="clearfix"></div>
+		</div>
+	</div>
+
+
+<!-- FOOTER -->
+
+
+	<div class="footer1_bg">
+
+		<div class="container">
+			<div class="row  footer">
+				<div class="copy text-center">
+					<p class="link"><span>&#169; Arnett's Animes | All rights reserved </span></p>
+					<a href="#home" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+		</div>
+
+			<script type="text/javascript">
+					$(function() {
+					  $('a[href*=#]:not([href=#])').click(function() {
+					    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				
+					      var target = $(this.hash);
+					      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					      if (target.length) {
+					        $('html,body').animate({
+					          scrollTop: target.offset().top
+					        }, 1000);
+					        return false;
+					      }
+					    }
+					  });
+					});
+			</script>
+	</div>
+</body>
+</html>
